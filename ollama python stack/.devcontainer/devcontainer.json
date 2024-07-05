@@ -1,6 +1,6 @@
 {
 	"name": "Data Science (Python and R) with Ollama server",
-    "dockerComposerFile": "../stack/docker-compose.yml",
+    "dockerComposeFile": "../stack/docker-compose.yml",
     "service": "devcontainer",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	// Features to add to the dev container. More info: https://containers.dev/features.
