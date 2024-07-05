@@ -1,0 +1,34 @@
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+  llm_host:
+    build: ollama
+    image: jakub-deka/ollama
+    container_name: llm_host
+    hostname: ollama_debug
+    ports:
+      - "11700:11434"
+    environment:
+      - OLLAMA_DEBUG=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  jupyter:
+    build: jupyter
+    image: jakub-deka/jupyter
+    # image: jupyter/datascience-notebook:x86_64-latest
+    container_name: jupyter
+    hostname: jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../://home/jovyan/demo
+    environment:
+      - JUPYTER_TOKEN=0800
