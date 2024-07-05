@@ -1,3 +1,3 @@
 # Summary
 
-Collections of custom devcontainer starting templates.
+Collections of custom devcontainer starter templates.
