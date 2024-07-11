@@ -26,6 +26,7 @@
             //"installOhMyZshConfig": "true",
 			"upgradePackages": "true"
 		}
+		, "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {}
 	},
 	"overrideFeatureInstallOrder": [
 		"ghcr.io/rocker-org/devcontainer-features/r-apt"
@@ -40,6 +41,7 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
+				"terminal.integrated.shell.linux": "/bin/fish",
 				"[python]": {
 					"defaultInterpreterPath": "/opt/conda/bin/python",
 					"editor.defaultFormatter": "ms-python.black-formatter",
