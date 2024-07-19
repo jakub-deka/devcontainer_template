@@ -62,7 +62,12 @@
 			"extensions": [
 				"ms-toolsai.jupyter",
 				"ms-python.python",
-				"reditorsupport.r"
+				"reditorsupport.r",
+				"njpwerner.autodocstring",
+				"frhtylcn.pythonsnippets",
+				"almenon.arepl",
+				"aaron-bond.better-comments",
+				"kevinrose.vsc-python-indent"
 			]
 		}
 	},
