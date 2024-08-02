@@ -1,0 +1,13 @@
+numpy
+scikit-learn
+matplotlib
+ipykernel
+pandas
+polars
+seaborn
+flaml[automl]
+catboost
+xgboost==2.0.3
+ipywidgets
+tensorflow==2.16.1
+scikeras

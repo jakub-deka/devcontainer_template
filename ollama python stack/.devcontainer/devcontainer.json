@@ -69,7 +69,8 @@
 				"frhtylcn.pythonsnippets",
 				"almenon.arepl",
 				"aaron-bond.better-comments",
-				"kevinrose.vsc-python-indent"
+				"kevinrose.vsc-python-indent",
+				"usernamehw.errorlens"
 			]
 		}
 	},
